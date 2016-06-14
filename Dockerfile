@@ -6,8 +6,7 @@ RUN pip install colorlover
 RUN pip install Pillow
 RUN pip install pygeocoder
 RUN pip install seaborn
-RUN pip install -U spacey
-RUN python -m spacy.en.download
+RUN pip install sklearn
 
 RUN echo "" >> ~/.bashrc
 RUN echo "cd /" >> ~/.bashrc
