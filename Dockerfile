@@ -7,5 +7,6 @@ RUN pip install colorlover
 RUN pip install pygeocoder
 RUN pip install seaborn
 RUN pip install sklearn
+RUN pip install tqdm
 
 WORKDIR /
