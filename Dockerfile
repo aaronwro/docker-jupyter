@@ -9,5 +9,6 @@ RUN pip install seaborn
 RUN pip install sklearn
 RUN pip install tqdm
 RUN pip install geonamescache
+RUN pip install cufflinks
 
 WORKDIR /
