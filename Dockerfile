@@ -6,7 +6,6 @@ RUN pip install --upgrade http://ci.tensorflow.org/view/Nightly/job/nightly-matr
 RUN pip install -U pip
 RUN pip install plotly
 RUN pip install colorlover
-#RUN pip install image
 RUN pip install keras
 RUN pip install pygeocoder
 RUN pip install seaborn
@@ -18,5 +17,11 @@ RUN pip install wordcloud
 RUN pip install nltk
 RUN python -m nltk.downloader -d /usr/local/share/nltk_data stopwords
 RUN pip install termcolor
+
+RUN apt-get update && apt-get install -y \
+	libjpeg-dev
+
+RUN pip install pillow
+
 
 WORKDIR /
