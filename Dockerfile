@@ -17,5 +17,6 @@ RUN pip install cufflinks
 RUN pip install wordcloud
 RUN pip install nltk
 RUN python -m nltk.downloader -d /usr/local/share/nltk_data stopwords
+RUN pip install termcolor
 
 WORKDIR /
